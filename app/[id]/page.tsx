@@ -1,6 +1,5 @@
 "use client";
 
-import { Metadata } from "next";
 import { FC, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../hooks";
 import { getUserById, usersState } from "@/features/users/usersSlice";
@@ -9,10 +8,6 @@ import Link from "next/link";
 import Image from "next/image";
 import IconLink from "@/app/components/IconLink";
 import { Spinner } from "flowbite-react";
-
-export const metadata: Metadata = {
-  title: "Get user",
-};
 
 interface pageProps {
   params: { id: number };
