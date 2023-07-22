@@ -2,9 +2,6 @@ import { UserValueState } from "@/app/types";
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
-  //kristine.medina@jitera.com
-  //https://iruuzainc.notion.site/React-Coding-Assignment-d55c556b441a45c7b3cc57ce217e6e8b
-
   const { searchParams } = new URL(request.url);
   const id = searchParams.get("id");
 
